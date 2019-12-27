@@ -1,0 +1,31 @@
+body {
+  font-family: "Avenir Next";
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-right a {
+  line-height: 90px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+.header-right{
+  float: right;
+}
+
+.header {
+  background-color: rgba(34, 49, 52, 0.9);
+  color: #fff;
+  height: 90px;
+}
+
+.header-logo {
+  float: left;
+  font-size: 36px;
+  padding: 20px 40px;
+
+}
