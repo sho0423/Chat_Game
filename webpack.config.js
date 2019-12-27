@@ -3,7 +3,7 @@ const path = require('path')
 // '__dirname' means the directory to which this file belongs
 module.exports = {
     entry: {
-        filename: path.resolve(__dirname,'./src/main.js')
+        filename: path.resolve(__dirname,'./src/index.js')
     },
     output: {
         path: path.resolve(__dirname,'./out'),
