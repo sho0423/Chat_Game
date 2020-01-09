@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: "Hiragino Kaku Gothic ProN";
+    padding: 100px 50px;
+}
+.title-section{
+    text-align: center;
+    font-size: 40px;
+}
+.title-section p{
+    border-bottom: 5px solid red;
+}
+.quize_part{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.quiz_part h3{
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+.quiz_part h2{
+    font-size: 35px;
+    padding-left: 100px;
+}
+.text{
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+  }
+.btn{
+    background-color: #dee7ec;
+    color: #889eab;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+    opacity: 0.8;
+}
+.btn:hover{
+    opacity: 1;
+}
+.quiz-result{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: blue;
+}
