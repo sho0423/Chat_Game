@@ -1,20 +1,21 @@
 import React from 'react'
 import {
-  BrowerRouter as Router,
+  BrowserRouter,
   Route,
   Link
 } from 'react-router-dom'
 
-//React Touterを使ったメインコンポーネントの定義
+//React Routerを使ったメインコンポーネントの定義
 
 const HelloApp = () => (
-  <Router>
+  
+  <BrowserRouter>
     <div style={{margin: 20}}>
-      <Route exact path ='/' component={Home} />
-      <Route exact path ='/ja' component={HelloJapanese} />
-      <Route exact path ='/en' component={HelloEnglish} />
+      <Route exact path='/test/Routing/main' component={Home} />
+      <Route path ='/ja' component={HelloJapanese} />
+      <Route path ='/en' component={HelloEnglish} />
     </div>
-  </Router>
+  </BrowserRouter>
 )
 
 //ホーム画面を表すコンポーネントを定義
@@ -24,8 +25,8 @@ const Home = () => (
     <h1>Hello App</h1>
     <p>言語を選択してください</p>
     <ul>
-      <li><a href='/ja'>日本語</a></li>
-      <li><a href='/ja'>英語</a></li>
+      <li><Link to='/ja'>日本語</Link></li>
+      <li><Link to='/en'>英語</Link></li>
     </ul>
   </div>
 )
