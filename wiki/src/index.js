@@ -7,6 +7,7 @@ import {
 import WikiEdit from './wiki_edit'
 import WikiShow from './wiki_show'
 import Header from './header'
+import Footer from './footer'
 
 const WikiApp = () => (
   <Router>
@@ -25,4 +26,8 @@ ReactDOM.render(
 ReactDOM.render(
   <WikiApp />,
   document.getElementById('root')
+)
+ReactDOM.render(
+  <Footer />,
+  document.getElementById('footer')
 )
