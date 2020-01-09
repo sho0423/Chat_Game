@@ -1,5 +1,0 @@
-yamadaaaaah
-<<<<<<< HEAD
-=======
-
->>>>>>> status
