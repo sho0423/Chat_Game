@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 import WikiEdit from './wiki_edit'
 import WikiShow from './wiki_show'
+import Header from './header'
 
 const WikiApp = () => (
   <Router>
@@ -17,6 +18,10 @@ const WikiApp = () => (
 )
 
 //DOMにメインコンポーネントを書き込む
+ReactDOM.render(
+  <Header />,
+  document.getElementById('header')
+)
 ReactDOM.render(
   <WikiApp />,
   document.getElementById('root')
