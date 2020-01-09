@@ -12,8 +12,8 @@ const HelloApp = () => (
   <BrowserRouter>
     <div style={{margin: 20}}>
       <Route exact path='/test/Routing/main' component={Home} />
-      <Route path ='/ja' component={HelloJapanese} />
-      <Route path ='/en' component={HelloEnglish} />
+      <Route path ='/test/Routing/ja' component={HelloJapanese} />
+      <Route path ='/test/Routing/en' component={HelloEnglish} />
     </div>
   </BrowserRouter>
 )
@@ -25,8 +25,8 @@ const Home = () => (
     <h1>Hello App</h1>
     <p>言語を選択してください</p>
     <ul>
-      <li><Link to='/ja'>日本語</Link></li>
-      <li><Link to='/en'>英語</Link></li>
+      <li><Link to='/test/Routing/ja'>日本語</Link></li>
+      <li><Link to='/test/Routing/en'>英語</Link></li>
     </ul>
   </div>
 )
@@ -35,7 +35,7 @@ const Home = () => (
 const HelloJapanese = () => (
   <div>
     <h1>こんにちは</h1>
-    <p><a href='/'>戻る</a></p>
+    <p><a href='/test/Routing/main'>戻る</a></p>
   </div>
 )
 
@@ -43,7 +43,7 @@ const HelloJapanese = () => (
 const HelloEnglish = () => (
   <div>
     <h1>Hello</h1>
-    <p><a href='/'>Back</a></p>
+    <p><a href='/test/Routing/main'>Back</a></p>
   </div>
 )
 
