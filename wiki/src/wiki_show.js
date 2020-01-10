@@ -2,6 +2,8 @@ import React from 'react'
 import request from 'superagent'
 import WikiParser from './wiki_parser'
 import styles from './styles'
+import LinkIcon from '@material-ui/icons/Link';
+import EditIcon from '@material-ui/icons/Edit';
 
 //Wikiメイン画面表示コンポーネント
 class WikiShow extends React.Component {
@@ -29,15 +31,28 @@ class WikiShow extends React.Component {
     const name = this.state.name
     const body = this.state.body
     const html = this.convertText(body)
-    return(
-      <div>
-        <h1>{this.state.name}</h1>
-        <div style={styles.show}>{html}</div>
-        <p style={styles.right}>
-          <a href={`/edit/${name}`}>→このページを編集</a>
-        </p>
-      </div>
-    )
+    if (name === "FrontPage") {
+      return(
+        <div>
+          <div style={{padding: "8px"}}>
+            <h1>{this.state.name}</h1>
+          </div>
+          <div style={styles.show}>{html}</div>
+        </div>
+      )
+    } else {
+      return(
+        <div>
+          <div style={{padding: "8px"}}>
+            <h1>{this.state.name}</h1>
+          </div>
+          <div style={styles.show}>{html}</div>
+          <p style={styles.right}>
+            <a href={`/edit/${name}`}><EditIcon />Edit</a>
+          </p>
+        </div>
+      )
+    }
   }
   //Wiki記法をReactオブジェクトに変換する
   convertText (src) {
@@ -53,7 +68,7 @@ class WikiShow extends React.Component {
       }
       if (e.tag === 'a') {
         return (<div key={`node${i}`}>
-          <a href={`/wiki/${e.label}`}>→{e.label}</a>
+          <a href={`/wiki/${e.label}`}><LinkIcon />{e.label}</a>
         </div>)
       }
       return React.createElement(

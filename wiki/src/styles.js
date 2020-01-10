@@ -8,7 +8,9 @@ const styles = {
     backgroundColor: 'silver'
   },
   right: {
-    textAlign: 'right'
+    textAlign: 'right',
+    fontSize: '15px',
+    padding: 12
   }
 }
 export default styles
