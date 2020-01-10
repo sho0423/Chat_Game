@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node wiki-server.js",
+    "start:dev": "webpack-dev-server --hot --inline --config webpack.config_dev.js --open",
+    "start:node": "node wiki-server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "watch": "webpack -w",
@@ -33,6 +34,7 @@
     "babel-loader": "^8.0.6",
     "pegjs": "^0.10.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
