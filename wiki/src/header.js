@@ -39,6 +39,8 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   title: {
+    fontFamily: 'Verdana',
+    fontSize: 30,
     flexGrow: 1,
     display: 'none',
     [theme.breakpoints.up('sm')]: {
