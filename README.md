@@ -4,7 +4,7 @@
 
 `cd wiki`
 
-`npm run start`
+`npm run start:node`
 
 でローカルホストのサーバーが起動するのでurlに飛ぶとwikiっぽいものに飛びます
 
