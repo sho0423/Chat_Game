@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>LevelUpExam</title>
+        <link rel="stylesheet" href="quiz.css">
+        <script type="text/javascript">
+            const quizSet=[
+            {
+                quiz: "海星",
+                answear: "ひとで"
+            },
+            {
+                quiz: "心太",
+                answear: "ところてん"
+            },
+            {
+                quiz: "賽子",
+                answear: "さいころ"
+            },
+            {
+                quiz: "蝸牛",
+                answear: "かたつむり"
+            },
+            {
+                quiz: "贔屓",
+                answear: "ひいき"
+            }
+        ];
+
+        var count =0;
+        function check(){
+          if(f.q1.value == quizSet[0].answear){
+              f.q1.value="○";
+              count += 1;
+          }
+          else{
+    　        f.q1.value="×";
+          };
+          if(f.q2.value == quizSet[1].answear){
+              f.q2.value="○";
+              count += 1;
+          }
+          else{
+    　        f.q2.value="×"
+          };
+          if(f.q1.value == quizSet[2].answear){
+              f.q3.value="○";
+              count += 1;
+          }
+          else{
+    　        f.q3.value="×"
+          };
+          if(f.q1.value == quizSet[3].answear){
+              f.q4.value="○";
+              count += 1;
+          }
+          else{
+    　        f.q4.value="×"
+          };
+          if(f.q1.value == quizSet[4].answear){
+              f.q5.value="○";
+              count += 1;
+          }
+          else{
+    　        f.q5.value="×"
+          };
+          return count;
+        }
+
+        var myfunc = function () {
+            let result = quizSet.length + "問中" + count + "問正解！";
+            if(count === quizSet.length){
+                result += "<br>Congratulation!!レベルアップ成功です！"
+            }else{
+                result += "<br>挑戦失敗です！もっとがんばりましょう(^_^;)"
+            };
+            document.getElementById('quiz-result').innerHTML = result;
+        }
+        </script>
+    </head>
+<body>
+    <div class="title-section">
+        <h1>レベルアップチャレンジ</h1>
+        <p>QUIZ1~5の漢字の読み方を答えてね！全問正解でレベルが上がるよ！</p>
+    </div>
+    <div class="quiz_part">
+        <form name="f">
+            <h3>Quiz１</h3>
+            <h2>海星</h2>
+        　　　<input name="q1" class="text"><p>
+            <h3>Quiz2</h3>
+            <h2>心太</h2>
+        　　　<input name="q2" class="text"><p>
+            <h3>Quiz3</h3>
+            <h2>賽子</h2>
+        　　　<input name="q3" class="text"><p>
+            <h3>Quiz4</h3>
+            <h2>蝸牛</h2>
+        　　　<input name="q4" class="text"><p>
+            <h3>Quiz5</h3>
+            <h2>贔屓</h2>
+        　　　<input name="q5" class="text"><p>
+        　　　<input type="button" value="回答送信" onclick="check();myfunc()" id="btn" class="btn">
+    </div>
+    <div class="quiz-result" id="quiz-result"></div>
+
+</form>
+</body>
+</html>
