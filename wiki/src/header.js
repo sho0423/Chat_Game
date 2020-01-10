@@ -21,6 +21,12 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import BookmarksIcon from '@material-ui/icons/Bookmarks';
+import FormatAlignLeftIcon from '@material-ui/icons/FormatAlignLeft';
+import PhonelinkIcon from '@material-ui/icons/Phonelink';
+import PaymentIcon from '@material-ui/icons/Payment';
+import SettingsIcon from '@material-ui/icons/Settings';
 
 
 const useStyles = makeStyles(theme => ({
@@ -33,6 +39,8 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   title: {
+    fontFamily: 'Verdana',
+    fontSize: 30,
     flexGrow: 1,
     display: 'none',
     [theme.breakpoints.up('sm')]: {
@@ -142,6 +150,7 @@ export default function BackToTop(props) {
     setState({ ...state, [side]: open });
   };
 
+  const icons = [<AccountCircleIcon />, <BookmarksIcon />, <FormatAlignLeftIcon />, <PhonelinkIcon />, <PaymentIcon />,<SettingsIcon />]
   const sideList = side => (
     <div
       className={classes.list}
@@ -149,19 +158,11 @@ export default function BackToTop(props) {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
+      
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {['Account', 'Bookmarks', 'How to write', 'Mobile link', 'Payment', 'Settings'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {['All mail', 'Trash', 'Spam'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon>{icons[index]}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
