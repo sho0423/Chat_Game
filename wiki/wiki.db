@@ -1,10 +1,12 @@
-{"name":"FrontPage","body":"*表記方法\n\n`*`\nの後に続けて文字を書くと見出しになります\n\n`-`\nの後に続けて文字を書くとリストになります\n\n-このように\n-書くことができます\n\n`>`\nの後に続けて文字を書くと引用文になります\n\n>これが引用文です\n\n`@`\nの後に続けて文字を書くと見出しになります。この時に半角スペースを直後に打ち込むと別のページに飛ぶので注意してください。\n\n各段落は改行を挟むことで分割されて認識されますので、最後の行を書いた後に改行することを忘れないでください。\n\n@本書の特徴\n@honsyo\n\n","_id":"N8RuBaBEIgf37lWA"}
+{"name":"FrontPage","body":"*表記方法\n\n`*`\nの後に続けて文字を書くと見出しになります\n\n`-`\nの後に続けて文字を書くとリストになります\n\n-このように\n-書くことができます\n\n`>`\nの後に続けて文字を書くと引用文になります\n\n>これが引用文です\n\n`@`\nの後に続けて文字を書くと見出しになります。この時に半角スペースを直後に打ち込むと別のページに飛ぶので注意してください。\n\n各段落は改行を挟むことで分割されて認識されますので、最後の行を書いた後に改行することを忘れないでください。\n\n\n\n","_id":"N8RuBaBEIgf37lWA"}
 {"name":" 本書の特徴","body":"* できたね\n> これがなぜ動くのかわからん。\n\n-なんかおかしい\n@FrontPage\n@honsyo\n","_id":"P3msSHaEOnuOIDv1"}
 {"name":"honsyo","body":"* 日本語だとダメ？\n\n@本書の特徴\n@FrontPage\n","_id":"V2poq5uxHypDXhnP"}
-{"name":"本書の特徴","body":"* 本書の特徴\n\n> なんかおかしくね\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\n\n- a\n- b\n- c\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@FrontPage\n@honsyo\n","_id":"kdvbLaAEUEWLneyg"}
-{"name":"honsyo","body":"* 日本語だとダメ？\n\n@本書の特徴\n@FrontPage\n","_id":"V2poq5uxHypDXhnP"}
-{"name":"FrontPage","body":"*表記方法\n\n`*`\nの後に続けて文字を書くと見出しになります\n\n`-`\nの後に続けて文字を書くとリストになります\n\n-このように\n-書くことができます\n\n`>`\nの後に続けて文字を書くと引用文になります\n\n>これが引用文です\n\n`@`\nの後に続けて文字を書くと見出しになります。この時に半角スペースを直後に打ち込むと別のページに飛ぶので注意してください。\n\n各段落は改行を挟むことで分割されて認識されますので、最後の行を書いた後に改行することを忘れないでください。\n\n\n\n","_id":"N8RuBaBEIgf37lWA"}
-{"name":"Example","body":"*このページからは自由に編集することができます。右下の編集ボタン(フッターのものでなく）を押します。\n\n`@`\nに続けて作成したいページの名前を打ち込んでください","_id":"mD5yEB2IKAXqDZ4C"}
-{"name":"Example","body":"*このページからは自由に編集することができます。右下の編集ボタン(フッターのものでなく）を押します。\n\n`@`\nに続けて作成したいページの名前を打ち込んでください\n\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
 {"name":"hoge","body":"@編集\n","_id":"gSXToHWFW2r1Fp8r"}
+{"name":"本書の特徴","body":"* 本書の特徴\n\n> なんかおかしくね\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\na\n\n\n- a\n- b\n- c\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@FrontPage\n@honsyo\n","_id":"kdvbLaAEUEWLneyg"}
 {"name":"Example","body":"*このページからは自由に編集することができます。右下の編集ボタン(フッターのものでなく）を押します。\n\n`@`\nに続けて作成したいページの名前を打ち込んでください\n\n@FrontPage\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
+{"name":"FrontPage","body":"*表記方法\n\n`*`\nの後に続けて文字を書くと見出しになります\n\n`-`\nの後に続けて文字を書くとリストになります\n\n-このように\n-書くことができます\n\n`>`\nの後に続けて文字を書くと引用文になります\n\n>これが引用文です\n\n`@`\nの後に続けて文字を書くと見出しになります。この時に半角スペースを直後に打ち込むと別のページに飛ぶので注意してください。\n\n各段落は改行を挟むことで分割されて認識されますので、最後の行を書いた後に改行することを忘れないでください。\n\n\n@Example\n\n","_id":"N8RuBaBEIgf37lWA"}
+{"name":"Example","body":"*このページからは自由に編集することができます。\n\n右下の編集ボタン(フッターのものでなく）を押します。\n\n`@`\nに続けて作成したいページの名前を打ち込んでください\n\n@FrontPage\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
+{"name":"Example","body":"*このページからは自由に編集することができます。\n\n右下の編集ボタン(フッターのものでなく）を押します。\n\n>`@`\nに続けて作成したいページの名前を打ち込んでください\n\n@FrontPage\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
+{"name":"Example","body":"*このページからは自由に編集することができます。\n\n右下の編集ボタン(フッターのものでなく）を押します。\n\n>@\nに続けて作成したいページの名前を打ち込んでください\n\n@FrontPage\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
+{"name":"Example","body":"*このページからは自由に編集することができます。\n\n右下の編集ボタン(フッターのものでなく）を押します。\n\n>@\n\nに続けて作成したいページの名前を打ち込んでください。最後の開業をお忘れなく。\n\n@FrontPage\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
+{"name":"Example","body":"*このページからは自由に編集することができます。\n\n右下の編集ボタン(フッターのものでなく）を押します。\n\n>@\n\nに続けて作成したいページの名前を打ち込んでください。最後の改行をお忘れなく。\n\n@FrontPage\n@hoge\n","_id":"mD5yEB2IKAXqDZ4C"}
